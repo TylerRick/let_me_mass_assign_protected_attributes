@@ -40,7 +40,7 @@ and these class methods:
 * `unprotected_new`
 * `unprotected_create`/`unprotected_create!`
 
-Thank you, Active Record, for always protecting me when I want you to. But sometimes I don't. Don't protect me for a second while I sneak in and change some protected attributes...
+Thank you, Active Record, for always protecting me from doing stupid things. But sometimes I *want* to have unprotected mass-assigns, so stop protecting me for just a second while I intentionally change some protected attributes...
 
 More examples:
 
@@ -78,6 +78,8 @@ Further reading
 To do
 =====
 
+* invitation.unprotected_build_membership(role: 'leader')
+* Allow passing a block like you can with normal new/create
 * Add tests
 
 Contributing

@@ -33,7 +33,7 @@ module LetMeMassAssignProtectedAttributes
       if attributes.is_a?(Array)
         attributes.each {|attributes| unprotected_new(attributes) }
       else
-        self.unprotected_attributes = attributes
+        new.tap {|_| _.unprotected_attributes = attributes }
       end
     end
 
