@@ -1,3 +1,30 @@
+Deprecated as of Rails 3.2
+==========================
+
+This library is, happily, no longer useful now that Rails 3.2 has introduced the `without_protection: true` option!
+
+So instead of 
+
+    user = User.unprotected_new(
+      name: 'Some Name',
+      email: 'test@example.com',
+      ...
+      is_admin: true,
+      state: :active
+    )
+
+you can now do this in Rails 3.2+:
+
+    user = User.new({
+      name: 'Some Name',
+      email: 'test@example.com',
+      ...
+      is_admin: true,
+      state: :active
+    }, without_protection: true)
+
+Please use that built-in feature instead. This library will no longer be maintained.
+
 Let me mass-assign protected attributes!
 ========================================
 
