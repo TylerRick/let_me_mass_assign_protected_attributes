@@ -4,7 +4,7 @@ require "let_me_mass_assign_protected_attributes/version"
 
 Gem::Specification.new do |s|
   s.name        = "let_me_mass_assign_protected_attributes"
-  s.version     = LetMeMassAssignProtectedAttributes::Version
+  s.version     = LetMeMassAssignProtectedAttributes.version
   s.authors     = ["Tyler Rick"]
   s.email       = ["tyler@tylerrick.com"]
   s.homepage    = ""
